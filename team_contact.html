@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Blah STONE Studios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --border-color: #000000;
+            --hover-bg: #f5f5f5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Quicksand', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-bottom: 24px;
+        }
+
+        .logo-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .back-link {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: var(--text-color);
+            border-bottom: 1px solid var(--text-color);
+            padding-bottom: 2px;
+            transition: opacity 0.2s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.6;
+        }
+
+        main {
+            flex: 1;
+            max-width: 700px;
+            margin: 40px auto;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+        }
+
+        .intro-text {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .contact-box {
+            border: 1px solid var(--border-color);
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            background: var(--bg-color);
+        }
+
+        .contact-item h2 {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+            opacity: 0.7;
+        }
+
+        .contact-item p, .contact-item a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Section */
+        footer {
+            margin-top: 60px;
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .footer-logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .footer-logo-img {
+            width: 140px;
+            height: auto;
+            filter: grayscale(100%) contrast(200%);
+        }
+
+        .footer-bottom-row {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-color);
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-bottom-row nav {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-bottom-row a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .footer-bottom-row a:hover {
+            opacity: 0.6;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .footer-bottom-row {
+                flex-direction: column;
+                gap: 12px;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo-title">Blah. STONE</a>
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+    </header>
+
+    <main>
+        <h1>App User Support & Team Contact</h1>
+        <p class="intro-text">Have questions regarding our virtual reality experiences, need technical support for LightClimber, or want to get in touch with the development team? Reach out through the channels below.</p>
+
+        <div class="contact-box">
+            <div class="contact-item">
+                <h2>General & Technical Support</h2>
+                <p>For assistance with our apps, bug reports, or troubleshooting: 👉 moon30biology@gmail.com</p>
+            </div>
+
+            <div class="contact-item">
+                <h2>Developer Inquiries</h2>
+                <p>Collaborations, press requests, or publishing queries: 👉 moon30biology@gmail.com</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-logo-container">
+            <img src="BlahSTONE_logo.jpeg" alt="Blah STONE Logo" class="footer-logo-img">
+        </div>
+        <div class="footer-bottom-row">
+            <div>&copy; 2026 Blah STONE Studios. All rights reserved.</div>
+            <nav>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="contact.html">App User Support</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
